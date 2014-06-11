@@ -15,7 +15,7 @@ from util import forest, jsonrpc, variable, deferral, math, pack
 import p2pool, p2pool.data as p2pool_data
 
 class WorkerBridge(worker_interface.WorkerBridge):
-    COINBASE_NONCE_LENGTH = 8
+    COINBASE_NONCE_LENGTH = 16
     
     def __init__(self, node, my_pubkey_hash, donation_percentage, merged_urls, worker_fee):
         worker_interface.WorkerBridge.__init__(self)
